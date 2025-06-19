@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Validator | LuisDev</title>
+</head>
+<body>
+    <header>
+        <!--Aqui esta el titulo principal de nusetra pagina-->
+        <h1>Calculadora de Edad</h1>
+        <p>Recomendaciones: 🔊 Activa el sonido de tu dispositvo para una mejor experiencia</p>
+    </header>
+    <main>
+        <!--Aqui esta nuestro fomulario con dos inputs: Nombre y Edad-->
+        <section class="formulario">
+            <form action="" id="miFormulario">
+                <div class="name-form form-campos">
+                    <label for="">Ingresa tu nombre</label>
+                    <br>
+                    <!--Input Nombre-->
+                    <input type="text" id="nombre">
+                </div>
+                <br>
+                <div class="age-form form-campos">
+                    <label for="">Ingresa tu edad</label>
+                    <br>
+                    <!--Input Edad-->
+                    <input type="number" id="age">
+                </div>
+                <br>
+                <!--Este apartado lo tenemos para generar el texto de salida que nos dara la logica dentro de nuestra app de javascript-->
+                <div class="text-information">
+                    <span id="text-form"></span>
+                </div>
+                <br>
+                <!--Este boton nos permite mandar los datos obtenidos mediante los inputs de este archivo para luego revisarlos dentro de la app de javascript y realizar la logica del codigo-->
+                <div class="container-btn">
+                    <button type="submit" class="btn-validar">Validar</button>
+                    <div class="overlay"></div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="sistema-interactivo.js"></script>
+</body>
+</html>
